@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "sudo search",
+    "version": "1.0",
+    "description": "Custom search for GitHub, YouTube, and Pinterest.",
+    "permissions": [
+        "tabs", 
+        "activeTab", 
+        "storage", 
+        "bookmarks", 
+        "browsingData", 
+        "clipboardWrite",
+        "clipboardRead"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "omnibox": {
+      "keyword": "sudo"
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ]
+  }
